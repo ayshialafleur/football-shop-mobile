@@ -1,5 +1,5 @@
-### Assignment 7
-## 1. Widget Tree
+## Assignment 7
+### 1. Widget Tree
 A **widget tree** is the hierarchical structure that represents how UI elements are organized in a Flutter app.  
 Each widget can contain other widgets — creating **parent-child relationships**, where:
 - The **parent** defines the layout or structure.
@@ -7,7 +7,7 @@ Each widget can contain other widgets — creating **parent-child relationships*
 
 ---
 
-## 2. Widgets Used in This Project
+### 2. Widgets Used in This Project
 - **MaterialApp** → Root of the app, provides theming, navigation, and structure.
 - **Scaffold** → Provides basic visual layout (AppBar, body, FAB, etc.).
 - **AppBar** → Displays the app title or actions at the top.
@@ -22,7 +22,7 @@ Each widget can contain other widgets — creating **parent-child relationships*
 
 ---
 
-## 3. Function of `MaterialApp`
+### 3. Function of `MaterialApp`
 `MaterialApp` sets up the **overall app environment**, including:
 - Theme and color scheme
 - Navigation and routes
@@ -32,7 +32,7 @@ Each widget can contain other widgets — creating **parent-child relationships*
 
 ---
 
-## 4. `StatelessWidget` vs `StatefulWidget`
+### 4. `StatelessWidget` vs `StatefulWidget`
 - **StatelessWidget** → Immutable; UI doesn’t change after it’s built.  
   *Use it when content is static.*
 - **StatefulWidget** → Has mutable state that can change during runtime via `setState()`.  
@@ -40,7 +40,7 @@ Each widget can contain other widgets — creating **parent-child relationships*
 
 ---
 
-## 5. BuildContext
+### 5. BuildContext
 `BuildContext` is an object that represents **the location of a widget within the widget tree**.  
 It allows widgets to access information about their position and the inherited data from ancestor widgets.
 
@@ -62,7 +62,7 @@ Widget build(BuildContext context) {
 
 ---
 
-## 6. Hot Reload vs Hot Restart
+### 6. Hot Reload vs Hot Restart
 - **Hot Reload** → Quickly updates the UI with your latest code changes **without losing the current app state**.  
   Useful for adjusting layouts, styles, or fixing small logic errors.
   - Example: Changing a button color or text — the app updates instantly.
