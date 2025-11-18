@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:football_shop/screens/menu.dart';
 import 'package:football_shop/screens/itemlist_form.dart';
+import 'package:football_shop/screens/item_entry_list.dart';
+import 'package:football_shop/screens/my_item_page.dart';
 
 class ItemCard extends StatelessWidget {
   // Menampilkan kartu dengan ikon dan nama.
@@ -19,7 +21,7 @@ class ItemCard extends StatelessWidget {
 
       child: InkWell(
         // Aksi ketika kartu ditekan.
-        onTap: () {
+        onTap: () async {
           // Menampilkan pesan SnackBar saat kartu ditekan.
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
@@ -31,6 +33,18 @@ class ItemCard extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const ItemFormPage()),
+            );
+          }
+          else if (item.name == "View Products") {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const ItemEntryListPage()),
+            );
+          }
+          else if (item.name == "My Products") {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyProductsPage()),
             );
           }
         },
